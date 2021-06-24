@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private float spawnInterval = 1;
+    [SerializeField] private ObjectPool objectPool = null;
+
+
     void Start()
     {
-        GameManager.Instance.a = 5;
+        Debug.Log(GameManager.Instance.a);
+        StartCoroutine(nameof(SpawnRoutine));
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator SpawnRoutine()
     {
-        Debug.Log(GameManager.Instance.a);
+        int counter = 0;
+        while(true)
+        {
+
+            GameObject obj = null;
+            if(counter%2==0)
+            {
+              obj = objectPool.GetPooledObject(0);
+                counter++;
+            }
+            else
+            {
+                obj = objectPool.GetPooledObject(1);
+                counter++;
+            }
+
+            obj.transform.position = Vector3.zero;
+            yield return new WaitForSeconds(spawnInterval);
+        }
     }
 }
