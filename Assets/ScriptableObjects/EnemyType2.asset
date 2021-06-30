@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EnemyType2
   m_EditorClassIdentifier: 
   enemyColor: {r: 0.22657363, g: 0.0934852, b: 0.9528302, a: 1}
-  enemySpeed: 5
+  enemySpeed: 4
   enemyScale: {x: 1, y: 1, z: 1}
   typeName: Soldier

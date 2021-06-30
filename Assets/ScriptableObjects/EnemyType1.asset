@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa1eb2ce81bb64e9b12271a438bdd5, type: 3}
+  m_Name: EnemyType1
+  m_EditorClassIdentifier: 
+  enemyColor: {r: 0.09579921, g: 0.4339623, b: 0.17229109, a: 1}
+  enemySpeed: 8
+  enemyScale: {x: 2, y: 2, z: 2}
+  typeName: Zombie

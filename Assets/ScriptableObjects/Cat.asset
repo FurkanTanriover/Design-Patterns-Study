@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80fa1eb2ce81bb64e9b12271a438bdd5, type: 3}
-  m_Name: EnemyType1
+  m_Script: {fileID: 11500000, guid: 1f21cf368fe4e134d8c0deadb13d0dd6, type: 3}
+  m_Name: Cat
   m_EditorClassIdentifier: 
-  enemyColor: {r: 0.09579921, g: 0.4339623, b: 0.17229109, a: 1}
-  enemySpeed: 5
-  enemyScale: {x: 2, y: 2, z: 2}
-  typeName: Zombie
+  name: 
+  description: 
+  "\u0131mage": {fileID: 0}
+  mana: 0
+  attack: 0
+  health: 0

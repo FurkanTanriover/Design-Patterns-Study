@@ -14,5 +14,17 @@ public class Enemy : MonoBehaviour
         typeText.text = enemyType.typeName;
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            MoveForward();
+        }
+    }
+
+    void MoveForward()
+    {
+        transform.Translate(Vector3.forward * enemyType.enemySpeed);
+    }
 
 }
